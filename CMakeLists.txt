@@ -20,7 +20,7 @@ file(GLOB_RECURSE SOURCES "./src/*.c" "./src/*.cpp")
 
 #PROJECT_SOURCE_DIR 这是项目路径
 #PROJECT_BINARY_DIR 这是build里面的文件夹
-SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin) #设置二进制文件存放路径 
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin) #设置二进制文件存放路径
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/firmware) #设置各种库存放路径
 
 
@@ -30,4 +30,3 @@ LINK_DIRECTORIES(${LIBRARY_OUTPUT_PATH})
 add_executable(main ${SOURCES})
 #添加一个run命令
 #add_custom_target (run COMMAND ninja all  COMMAND ${EXECUTABLE_OUTPUT_PATH}/main)
-
